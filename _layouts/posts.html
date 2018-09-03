@@ -1,0 +1,21 @@
+---
+layout: page
+case_url: ../../../
+body-class: parallax-wrapper casestudy
+---
+
+<header class="parallax-bg">        
+    <h2 class="blog-header">{{ page.title }}</h2>
+    <h4>{{ page.subtitle }}</h4>
+</header>
+
+    {% include pirate-flag.html %}
+
+    <div class="island-background blog">
+        {{ content }}
+        
+        {% include footnote.html %}          
+        {% include button.html url="../../../blog.html" label="More Posts" %}
+    </div>
+
+        {% include border-bottom.html %}

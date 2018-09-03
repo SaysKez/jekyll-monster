@@ -1,0 +1,25 @@
+---
+layout: page
+case_url: ../
+body-class: parallax-wrapper casestudy
+---
+
+    <header class="parallax-bg">        
+        <h1 class="{{ page.descender }}">{{ page.project_title }}</h1>
+        <h4>{{ page.subtitle }}</h4>
+    </header>
+
+        {% include pirate-flag.html %}
+
+        <div class="island-background">
+
+            {% include casestudy-head.html %}
+
+            {{ content }}
+          
+            {% include footnote.html %}
+
+            {% include portfolio-button.html %}
+        </div>  
+
+            {% include border-bottom.html %}

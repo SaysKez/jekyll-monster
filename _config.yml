@@ -1,0 +1,29 @@
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Here Be Monsters
+email: greetings@kez.ie
+url: "https://kez.ie"
+excerpt_separator: <!--more-->
+
+# Casestudy headings
+p1: Challenge
+p2: Approach
+p3: Obstacles
+p4: Solution
+p5: Reflection
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,410 @@
+---
+title: Kezie Todd
+stop1: stop1-icon
+stop1_link: casestudy/atomicchef.html
+stop1_title: Atomic Chef
+stop1_desc: Cooking up eLearning for the Periodic Table
+stop1_type: Content Design/UX
+stop2: swamp-icon
+stop3: spyglass-icon
+stop4: stop4-icon
+stop4_link: casestudy/takahe.html
+stop4_title: Reveal the Takahe
+stop4_desc: Discover the story of the mysterious bird with red reveal
+stop4_type: Art Direction/Narrative
+stop5: skeleton-icon
+stop6: creative-monster
+stop7: bottle-icon
+stop8: stop8-icon
+stop8_title: Happy Days
+stop8_link: casestudy/happydays.html
+stop8_desc: Deliver delight based on the weather with the Happy Days app
+stop8_type: UX/UI
+stop9: logbook-icon
+stop10: palm-icon
+---
+
+{% include head.html %}
+
+<body>
+  
+    <header id="home">
+      {% include nav.html %}
+    </header>
+  
+
+    <div class="map-container">
+        <svg class="map-svg" viewBox="0 0 1440 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <desc>Map of the World of Kezie</desc>
+
+          <defs>
+            <!-- Key Locations -->
+            {% include ship-icon.html %}
+
+            {% include chest-icon.html %}
+
+            {% include flag-icon.html %}
+
+            {% include kraken-icon.html %}
+
+            <!-- Minor Locations -->
+            {% include stop2.html %}
+            {% include stop3.html %}
+            {% include stop5.html %}
+            {% include stop5.html %}
+            {% include stop6.html %}
+            {% include stop7.html %}
+            {% include stop9.html %}
+            {% include stop10.html %}
+            
+            <!-- Projects -->
+            {% include stop1.html %}
+            {% include stop4.html %}
+            {% include stop8.html %}
+          </defs>
+
+          <g fill="none" fill-rule="evenodd">
+
+            <g id="map">
+
+              <path id="island" fill="#000" d="M57.45 218.223c2.09 77.39 24.336 30.954 31.188 82.063 6.85 51.11-64.362 225.678-54.743 302.672 5.443 43.562 102.116 182.898 99.49 225.44-2.506 40.555 214.627 8.776 187.12 37.34-35.85 37.23-212.802 27.866-215.875 55.657-5.244 47.422-44.692 23.852 46.734 49.32 91.427 25.47 48.42 30.68 196.336 25.923 100.597-3.236 91.15-33.812 149.125-40.407 27.27-3.1 236.504 36.51 285.024 40.408 75.943 6.098 127.754-17.13 182.795-17.58 45.988-.373 99.862 23.088 118.524 17.58 55.268-16.313-110.377-57.04-84.603-130.9 25.775-73.858 99.198-29.593 176.985-68.17 77.787-38.58 112.162-48.593 142.937-90.493 30.774-41.9-18.93 32.613 0-104.117 7.28-52.6 76.62-80.562 85.944-118.586 14.914-60.815-27.61-112.494-30.132-145.234-4.1-53.21-33.472-78.044-84.18-104.383-50.708-26.34-70.428 16.89-135.07-16.532-64.642-33.42-62.845-73.024-96.953-103.43-34.11-30.404 62.497-47.095-59.533-78.937-122.03-31.84-166.145 16.75-282.88 14.188-59.598-1.31-100.603-14.528-139.424-14.188-37.217.327-72.994 14.188-95.454 14.188-45.888 0 63.658-28.14-70.86-24.063-86.536 2.624-79.064 58.558-94.877 73.452-16.835 15.86-51.474 45.416-118.7 29.877-49.32-11.4-.77 141.368-16.228 170.976-16.074 30.79-123.76-121.515-122.695-82.063z"/>
+
+            <!-- Trails -->
+            <g stroke="#FFF">
+              <path class="trails" d="M332.21 861.534c101.394 5.923 152.16-29.537 152.294-106.38.204-115.267-126.492-195.915-215.11-242.978-88.616-47.062-95.494-206.307 13.337-270.164 49.48-29.03 107.748 77.733 189.064 63.96 81.315-13.77 204.322-140.94 157.6-157.85-91.34-33.063-68.377 208.535 5.9 157.85 18.57-12.67 64.605-52.317 95.074-22.335 30.468 29.983-32.014 208.1 16.472 228.54 90.294 38.062 251.673-116.93 292.422-188.415 40.75-71.483-174.936-184.554-87.867-170.42 87.07 14.13 316.063 142.8 359.234 214.467 43.17 71.666 30.754 106.773-127 171.054-141.35 57.596-89.278 162.595-46.428 244.177"/>
+
+              <path class="trails" d="M984.685 901.614c-141.195-5.12-253.1-16.395-264.685-94.387"/>
+            </g>
+
+
+            <!-- Stops -->
+             <!-- <rect id="stop7" x="963" y="267" width="120" height="120"></rect>-->
+
+            <a xlink:href="{{ page.stop1_link }}"><rect id="stop1" fill="#000" x="405" y="714" width="120" height="120"></rect></a>            
+            <g class="minor-location project1-link">
+              <use x="430" y="730" width="75" height="75" xlink:href="#{{ page.stop1 }}" />
+            </g>
+            <text class="project-description">
+                <tspan x="370" y="850" id="project1-text"></tspan>
+            </text>
+
+            <rect id="stop2" fill="#000" x="220" y="597" width="170" height="120"></rect>
+            <use class="minor-location" x="210" y="597" width="184" height="89" xlink:href="#{{ page.stop2 }}" />
+            <text class="location-description">
+              <tspan x="160" y="580" id="swamp-text"></tspan>
+            </text>
+
+            <rect id="stop3" fill="#000" x="175" y="389" width="120" height="120"></rect>
+            <g id="spyglass" class="minor-location">
+              <use x="180" y="440" width="72" height="33" xlink:href="#{{ page.stop3 }}" />
+            </g>
+            <text class="location-description">
+                <tspan x="270" y="430" id="spyglass-text1"></tspan>
+                <tspan x="270" y="450" id="spyglass-text2"></tspan>
+            </text>
+            
+            <a xlink:href="{{ page.stop4_link }}"><rect id="stop4" fill="#000" x="373" y="220" width="120" height="120"></rect></a>
+            <g class="minor-location project2-link">
+              <use x="390" y="225" width="100" height="100" xlink:href="#{{ page.stop4 }}" />
+            </g>
+            <text class="project-description">
+              <tspan x="360" y="365" id="project2-text"></tspan>
+            </text>
+
+            <rect id="stop5" fill="#000" x="592" y="60" width="120" height="120"></rect>
+            <use class="minor-location" x="590" y="64" width="76" height="97" xlink:href="#{{ page.stop5 }}" />
+            <text class="location-description">
+                <tspan x="650" y="94" id="skeleton-text"></tspan>
+            </text>
+
+            <rect id="stop6" fill="#000" x="688" y="212" width="120" height="120"></rect>
+            <use class="minor-location" x="700" y="250" width="97" height="57" xlink:href="#{{ page.stop6 }}" />
+            <text class="location-description">
+                <tspan x="720" y="230" id="cave-text"></tspan>
+            </text>
+
+            <rect id="stop7" fill="#000" x="922" y="95" width="120" height="120"></rect>
+            <use class="minor-location" x="930" y="160" width="111" height="38" xlink:href="#{{ page.stop7 }}" />
+            <text class="location-description">
+                <tspan x="900" y="140" id="bottle-text"></tspan>
+            </text>
+
+            <a xlink:href="{{ page.stop8_link }}"><rect id="stop8" fill="#000" x="1228" y="300" width="120" height="120"></rect></a>
+            <g class="minor-location project3-link">
+              <use x="1228" y="300" width="100" height="100" xlink:href="#{{ page.stop8 }}" />
+            </g>
+            <text class="project-description">
+              <tspan x="1200" y="435" id="project3-text"></tspan>
+            </text>
+
+            <a xlink:href="https://medium.com/@SaysKez" target="_blank"><rect id="stop9" fill="#000" x="1040" y="565" width="120" height="120"></rect></a>
+            <g class="minor-location blog-link">
+              <use x="1064" y="565" width="84" height="96" xlink:href="#{{ page.stop9 }}" />
+            </g>
+            <text class="project-description">
+              <tspan x="1050" y="700" id="logbook-text"></tspan>
+            </text>
+
+            <!-- g around palm to fix animation in Safari + Firefox -->
+            <rect id="stop10" fill="#000" x="822" y="802" width="120" height="120"></rect>
+            <g id="palm1">
+              <use class="minor-location" x="842" y="810" width="50" height="60" xlink:href="#{{ page.stop10 }}" />
+            </g>
+            <g id="palm2">
+              <use class="minor-location" x="900" y="830" width="50" height="60" xlink:href="#{{ page.stop10 }}" />
+            </g>
+            <g id="palm3">
+              <use id="palm3" class="minor-location" x="860" y="870" width="50" height="60" xlink:href="#{{ page.stop10 }}" />
+            </g>
+            <text class="location-description">
+                <tspan x="685" y="920" id="palm-text"></tspan>                
+            </text>
+            
+
+            <!-- Key Location Icons
+            Safari and Firefox don't like the transforms so each use wrapped in <g> for scale on hover-->
+
+              <g class="ship">
+                <use x="200" y="785" width="118" height="86" xlink:href="#ship-icon" />
+              </g>
+              <a xlink:href="about.html">
+                <rect id="about-box" fill="#000" opacity="0" x="166" y="749" width="190" height="190"></rect>
+              </a>
+
+              <g id="chest">
+                <use x="210" y="140" width="100" height="84" xlink:href="#chest-icon" />                            
+              </g>
+              <a xlink:href="portfolio.html">
+                  <rect id="work-box" fill="#000" opacity="0" x="166" y="85" width="190" height="190"></rect>                  
+              </a>
+
+              <g id="flag">
+                <use x="1100" y="100" width="118" height="129" xlink:href="#flag-icon" />  
+              </g>            
+              <a xlink:href="cv.html">
+                  <rect id="cv-box" fill="#000" opacity="0" x="1084" y="85" width="190" height="190"></rect>                  
+              </a>
+
+              <g id="kraken">
+                <use x="1060" y="770" width="211" height="138" xlink:href="#kraken-icon" />                            
+              </g>
+              <a xlink:href="blog.html">
+                <rect id="blog-box" fill="#000" opacity="0" x="1084" y="749" width="190" height="190"></rect>
+              </a>
+              <!-- <circle id="blog-circle" cx="1160" cy="850" r="120" stroke="#ED1956" stroke-width="6" fill="none" />-->
+              
+          </g>
+            
+
+              <!--Key Location Headings -->
+              <g class="key-location-text" text-anchor="middle">
+                <text>
+                    <tspan id="about-text" x="259" y="926">About</tspan>
+                </text>
+                <text>
+                    <tspan id="work-text" x="259" y="269">Work</tspan>
+                </text>
+                <text>
+                    <tspan id="cv-text" x="1150" y="269">CV</tspan>
+                </text>
+                <text>
+                  <tspan id="blog-text" x="1168" y="930">Blog</tspan>
+                </text>
+                <text>
+                  <tspan id="contact-text" x="720" y="775">Talk to Me</tspan>
+                </text>
+              </g>
+
+
+              <!-- Words -->
+                    <!--<path fill="#000" d="M431 414h579v196H431z"/>-->
+                    <rect fill="#000" x="435" y="400" width="575" height="220"></rect>                  
+                    <g fill="#6AD4EB" transform="translate(490.000000, 410.000000)">
+                        <polygon points="62 85.06 62 70.74 33.85 42.59 62 14.32 62 0 19.41 42.59 62 85.06"/><path d="M135,76.08H160.4v9.34H115.51l27.66-33.61H121.33V42.59h41.25Z"/><path d="M169,28.88a6.37,6.37,0,0,1,6.43-6.31,6.15,6.15,0,0,1,4.61,1.94A6.35,6.35,0,0,1,182,29a6.15,6.15,0,0,1-1.94,4.61,6.23,6.23,0,0,1-4.49,1.82A6.68,6.68,0,0,1,169,28.88Zm11.41,13.71V85.3h-9.83V52.54Z"/><polygon points="284.16 85.18 293.99 77.41 293.99 9.83 337.43 9.83 345.07 0 284.16 0 284.16 85.18"/><path d="M305.52,62.49a21.09,21.09,0,0,1,6.67-15.77,23.3,23.3,0,0,1,32.4,0,21.7,21.7,0,0,1,6.55,16,21.89,21.89,0,0,1-6.67,16.14A23.1,23.1,0,0,1,328,85.42a21.78,21.78,0,0,1-16.14-6.55A23.52,23.52,0,0,1,305.52,62.49Zm10.07.12A14,14,0,0,0,319,72.68a13.41,13.41,0,0,0,18.56,0,14.33,14.33,0,0,0,3.52-9.95,14.33,14.33,0,0,0-3.52-9.95,13.26,13.26,0,0,0-18.44,0,14.23,14.23,0,0,0-3.52,9.83Z"/><path d="M392.15,20l9.95-9.95V84.21h-9.95V79.72a18.17,18.17,0,0,1-13.23,5.7A18.56,18.56,0,0,1,364.36,79a23.44,23.44,0,0,1-5.7-16.26,23.7,23.7,0,0,1,5.7-15.89,18.45,18.45,0,0,1,26-2.06,11.24,11.24,0,0,1,1.7,1.7ZM368.61,62.61a14.71,14.71,0,0,0,3.28,9.95,10.46,10.46,0,0,0,8.49,3.88,11.24,11.24,0,0,0,8.86-3.76,14.81,14.81,0,0,0,3.4-9.95,14.71,14.71,0,0,0-3.28-9.95A11.08,11.08,0,0,0,380.5,49,11.31,11.31,0,0,0,372,52.78,16.09,16.09,0,0,0,368.61,62.61Z"/><path d="M445.05,20,455,10.07V84.21h-9.95V79.72a18.17,18.17,0,0,1-13.23,5.7A18.56,18.56,0,0,1,417.27,79a23.44,23.44,0,0,1-5.7-16.26,23.7,23.7,0,0,1,5.7-15.89,18.45,18.45,0,0,1,26-2.06,11.24,11.24,0,0,1,1.7,1.7ZM421.63,62.61a14.71,14.71,0,0,0,3.28,9.95,10.46,10.46,0,0,0,8.49,3.88,11.24,11.24,0,0,0,8.86-3.76,14.81,14.81,0,0,0,3.4-9.95,14.71,14.71,0,0,0-3.28-9.95A11.08,11.08,0,0,0,433.52,49a10.87,10.87,0,0,0-8.37,3.76A14.23,14.23,0,0,0,421.63,62.61Z"/><rect width="9.83" height="85.05"/><path d="M258,9.83V0H293V9.83Z"/><path d="M103.38,68.43l-.36-.12-.12.12Z"/><path d="M99.49,72.92c-.61.61-1.21,1.21-1.94,1.82a10.79,10.79,0,0,1-6.07,1.82,10.33,10.33,0,0,1-7.77-3,13.24,13.24,0,0,1-3.4-8.37H110.9V62.85c0-7-1.82-12.62-5.46-16.5a19.34,19.34,0,0,0-14.92-6.07,19.53,19.53,0,0,0-15,6.19,23.84,23.84,0,0,0-5.58,16.38,23.09,23.09,0,0,0,5.82,16.38A20.23,20.23,0,0,0,91,85.42a35.64,35.64,0,0,0,6.19-.61,22.49,22.49,0,0,0,5.34-2.18,23.71,23.71,0,0,0,4.61-3.88,29.45,29.45,0,0,0,4-5.58ZM82.39,53.75a9.17,9.17,0,0,1,2.31-2.55,8.47,8.47,0,0,1,2.91-1.58A10.53,10.53,0,0,1,91,49c5.22,0,8.61,2.67,9.95,7.89H81.05A10.3,10.3,0,0,1,82.39,53.75Z"/><path d="M222.4,68.43l-.36-.12-.12.12Z"/><path d="M218.64,72.92c-.61.61-1.21,1.21-1.94,1.82a10.79,10.79,0,0,1-6.07,1.82,10.33,10.33,0,0,1-7.77-3,12.74,12.74,0,0,1-3.52-8.37H230V62.85c0-7-1.82-12.62-5.46-16.5a21.46,21.46,0,0,0-30,.12A23.84,23.84,0,0,0,189,62.85a23.09,23.09,0,0,0,5.82,16.38,20.23,20.23,0,0,0,15.29,6.19,26.94,26.94,0,0,0,6.19-.73,22.49,22.49,0,0,0,5.34-2.18,23.71,23.71,0,0,0,4.61-3.88,29.45,29.45,0,0,0,4-5.58ZM201.41,53.75a9.67,9.67,0,0,1,5.1-4,10.53,10.53,0,0,1,3.4-.61c5.22,0,8.61,2.67,9.95,7.89H200.08A9.81,9.81,0,0,1,201.41,53.75Z"/>
+                    </g>
+
+                  <text class="intro-text" text-anchor="middle">
+                    <tspan x="718" y="543">But you can call me Kez. Maker of stories, monsters, and </tspan>
+                    <tspan x="718" y="573">designs with personality hailing from Northern Ireland and just </tspan>
+                    <tspan x="718" y="603">about everywhere in between.</tspan>
+                  </text>
+
+                  <path class="x" fill="#6AD4EB" d="M749.358 637L719.5 666.858 689.642 637 669 657.642l29.858 29.858L669 717.358 689.642 738l29.858-29.857L749.358 738 770 717.358 740.143 687.5 770 657.642z"/>
+                  <a xlink:href="contact.html">
+                    <rect id="contact-box" fill="#000" opacity="0" x="625" y="612" width="190" height="190"></rect>
+                  </a>
+
+          </g>
+        </svg>
+    </div>
+
+    <div class="responsive-map">
+      <svg class="border-top" viewBox="0 0 1440 129">
+        <defs>
+          <symbol id="wave-border" viewBox="0 0 1440 129">
+              <path fill-rule="evenodd" d="M0,51.8753646 C178.229167,97.4310075 310.751488,120.208829 397.566964,120.208829 C527.790179,120.208829 662.103808,35.1366052 953.102679,14.7791603 C1049.31151,8.04866672 1211.61062,20.4140682 1440,51.8753646 L1440,130 L0,130 L0,51.8753646 Z"/>              
+          </symbol>
+
+          <symbol id="bump-border" viewBox="0 0 1440 220">
+              <path fill-rule="evenodd" d="M0,142.875557 C175.769111,54.1166015 386.532132,9.82492249 632.289062,10.0005201 C823.632812,10.1372385 1002.9879,92.1025509 1141.69531,115.50026 C1229.15132,130.252681 1328.58621,139.37778 1440,142.875557 L1440,221 L0,221 L0,142.875557 Z"/>
+          </symbol>
+        </defs>
+
+        <use xlink:href="#wave-border" />
+      </svg>          
+      <div>
+          <svg id="wordmark" viewBox="0 0 455 85.44">
+              <title>Kezie Todd</title>
+              <g fill="#6AD4EB">
+                <path d="M62 85.06V70.74L33.85 42.59 62 14.32V0L19.41 42.59 62 85.06M135 76.08h25.4v9.34h-44.89l27.66-33.61h-21.84v-9.22h41.25zM169 28.88a6.37 6.37 0 0 1 6.43-6.31 6.15 6.15 0 0 1 4.61 1.94A6.35 6.35 0 0 1 182 29a6.15 6.15 0 0 1-1.94 4.61 6.23 6.23 0 0 1-4.49 1.82 6.68 6.68 0 0 1-6.57-6.55zm11.41 13.71V85.3h-9.83V52.54zM284.16 85.18l9.83-7.77V9.83h43.44L345.07 0h-60.91v85.18"/>
+                <path d="M305.52 62.49a21.09 21.09 0 0 1 6.67-15.77 23.3 23.3 0 0 1 32.4 0 21.7 21.7 0 0 1 6.55 16 21.89 21.89 0 0 1-6.67 16.14A23.1 23.1 0 0 1 328 85.42a21.78 21.78 0 0 1-16.14-6.55 23.52 23.52 0 0 1-6.34-16.38zm10.07.12A14 14 0 0 0 319 72.68a13.41 13.41 0 0 0 18.56 0 14.33 14.33 0 0 0 3.52-9.95 14.33 14.33 0 0 0-3.52-9.95 13.26 13.26 0 0 0-18.44 0 14.23 14.23 0 0 0-3.52 9.83zM392.15 20l9.95-9.95v74.16h-9.95v-4.49a18.17 18.17 0 0 1-13.23 5.7A18.56 18.56 0 0 1 364.36 79a23.44 23.44 0 0 1-5.7-16.26 23.7 23.7 0 0 1 5.7-15.89 18.45 18.45 0 0 1 26-2.06 11.24 11.24 0 0 1 1.7 1.7zm-23.54 42.61a14.71 14.71 0 0 0 3.28 9.95 10.46 10.46 0 0 0 8.49 3.88 11.24 11.24 0 0 0 8.86-3.76 14.81 14.81 0 0 0 3.4-9.95 14.71 14.71 0 0 0-3.28-9.95A11.08 11.08 0 0 0 380.5 49a11.31 11.31 0 0 0-8.5 3.78 16.09 16.09 0 0 0-3.39 9.83zM445.05 20l9.95-9.93v74.14h-9.95v-4.49a18.17 18.17 0 0 1-13.23 5.7A18.56 18.56 0 0 1 417.27 79a23.44 23.44 0 0 1-5.7-16.26 23.7 23.7 0 0 1 5.7-15.89 18.45 18.45 0 0 1 26-2.06 11.24 11.24 0 0 1 1.7 1.7zm-23.42 42.61a14.71 14.71 0 0 0 3.28 9.95 10.46 10.46 0 0 0 8.49 3.88 11.24 11.24 0 0 0 8.86-3.76 14.81 14.81 0 0 0 3.4-9.95 14.71 14.71 0 0 0-3.28-9.95 11.08 11.08 0 0 0-8.86-3.78 10.87 10.87 0 0 0-8.37 3.76 14.23 14.23 0 0 0-3.52 9.85zM0 0h9.83v85.05H0zM258 9.83V0h35v9.83zM103.38 68.43l-.36-.12-.12.12z"/>
+                <path d="M99.49 72.92c-.61.61-1.21 1.21-1.94 1.82a10.79 10.79 0 0 1-6.07 1.82 10.33 10.33 0 0 1-7.77-3 13.24 13.24 0 0 1-3.4-8.37h30.59v-2.34c0-7-1.82-12.62-5.46-16.5a19.34 19.34 0 0 0-14.92-6.07 19.53 19.53 0 0 0-15 6.19 23.84 23.84 0 0 0-5.58 16.38 23.09 23.09 0 0 0 5.82 16.38A20.23 20.23 0 0 0 91 85.42a35.64 35.64 0 0 0 6.19-.61 22.49 22.49 0 0 0 5.34-2.18 23.71 23.71 0 0 0 4.61-3.88 29.45 29.45 0 0 0 4-5.58zm-17.1-19.17a9.17 9.17 0 0 1 2.31-2.55 8.47 8.47 0 0 1 2.91-1.58A10.53 10.53 0 0 1 91 49c5.22 0 8.61 2.67 9.95 7.89h-19.9a10.3 10.3 0 0 1 1.34-3.14zM222.4 68.43l-.36-.12-.12.12z"/>
+                <path d="M218.64 72.92c-.61.61-1.21 1.21-1.94 1.82a10.79 10.79 0 0 1-6.07 1.82 10.33 10.33 0 0 1-7.77-3 12.74 12.74 0 0 1-3.52-8.37H230v-2.34c0-7-1.82-12.62-5.46-16.5a21.46 21.46 0 0 0-30 .12A23.84 23.84 0 0 0 189 62.85a23.09 23.09 0 0 0 5.82 16.38 20.23 20.23 0 0 0 15.29 6.19 26.94 26.94 0 0 0 6.19-.73 22.49 22.49 0 0 0 5.34-2.18 23.71 23.71 0 0 0 4.61-3.88 29.45 29.45 0 0 0 4-5.58zm-17.23-19.17a9.67 9.67 0 0 1 5.1-4 10.53 10.53 0 0 1 3.4-.61c5.22 0 8.61 2.67 9.95 7.89h-19.78a9.81 9.81 0 0 1 1.33-3.28z"/>
+              </g>
+        </svg>
+
+        <p>But you can call me Kez. Maker of stories, monsters, and designs with personality hailing from Northern Ireland and just about everywhere in between.</p>
+      </div>
+      <svg class="border-bottom" viewBox="0 0 1440 129">
+          <use xlink:href="#wave-border" />
+      </svg>
+
+      <div class="water">
+          <svg class="key-location-icon" viewBox="0 0 118 86">
+              <g class="ship">
+                <use xlink:href="#ship-icon" />
+              </g>
+          </svg>
+      </div>
+
+      <svg class="border-top" viewBox="0 0 1440 220">
+          <use xlink:href="#bump-border" />
+      </svg>
+      <div>
+        <h3>About Me</h3>
+        <p>Who is this monster maker? Come sailing and find out.</p>
+        <div class="button"><a href="about.html">Tell Me More</a></div> 
+        
+        
+        <svg class="key-location-icon" viewBox="0 0 100 84">
+            <use width="100" height="84" xlink:href="#chest-icon" />
+        </svg>
+      
+        <!-- Testing how to fix buggy animation when in responsive view -->
+      <!--
+      <svg class="key-location-icon" viewBox="0 0 100 84">
+          <title>Treasure Chest</title>
+          <desc>Treasure chest opening temptingly</desc>              
+          <defs/>
+          <g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
+            <path fill="#FFF" d="M0 44h100v41H0z"/>
+            <path fill="#FFF" d="M22 2h56c12.15 0 22 9.85 22 22H0C0 11.85 9.85 2 22 2z"/>
+            <g class="chest-inside">
+            <path class="chest-highlight" stroke="#FFF" fill="#000" d="M0 24h100l-13.218 8.904L100 44H0l12.513-11.096z"/>
+            </g>
+            <path class="chest-highlight" fill="#000" d="M48.92 53.8C47.797 53.366 47 52.276 47 51c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.276-.797 2.366-1.92 2.8L53 61h-6l1.92-7.2z"/>
+            <path stroke="#FFF" d="M87.087 33.135H11.85"/>
+            <path id="chest-stoke" stroke="#000" d="M20.92 42.95v42.13M80 43v42.13M66 .878c6.417 0 10.958 7.72 13.623 23.157v.74M34.227 1C27.81 1 23.27 8.744 20.604 24.233v.665"/>
+          </g>
+        </svg>
+      -->
+        <h3>My Work</h3>
+        <div class="button-flex">
+            <div class="flex-wrapper">
+
+                <a href="{{ page.stop4_link }}">                            
+                    <div class="flex-container">        
+                            <svg viewBox="0 0 500 500">
+                              <use xlink:href="#{{ page.stop4 }}" />              
+                            </svg>
+                        <div class="flex-item">                             
+                            <h3>{{ page.stop4_title }}</h3>
+                            <p>{{ page.stop4_desc }}</p>
+                            <p class="project-type">{{ page.stop4_type }}</p>                                                        
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ page.stop8_link }}">
+                    <div class="flex-container">
+                        <svg viewBox="0 0 500 500">
+                          <use xlink:href="#{{ page.stop8 }}" />              
+                        </svg>     
+                        <div class="flex-item">
+                            <h3>{{ page.stop8_title }}</h3>
+                            <p>{{ page.stop8_desc }}</p>
+                            <p class="project-type">{{ page.stop8_type }}</p>                                                   
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#{{ page.stop1_link }}">                    
+                    <div class="flex-container">        
+                        <svg viewBox="0 0 500 500">
+                            <use xlink:href="#{{ page.stop1 }}" />              
+                        </svg>                        
+                        <div class="flex-item">                             
+                            <h3>{{ page.stop1_title }}</h3>
+                            <p>{{ page.stop1_desc }}</p>
+                            <p class="project-type">{{ page.stop1_type }}</p>                                                        
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+          </div>
+        <div class="button"><a href="portfolio.html">Discover More</a></div> 
+
+        <svg class="key-location-icon" viewBox="0 0 118 129">
+            <use xlink:href="#flag-icon" />
+        </svg>
+        <h3>My Capabilities</h3>
+        <p>Like what you see? I'm a pirate for hire. Checkout my CV and let's work together.</p>        
+        <div class="button"><a href="cv.html">Peruse the CV</a></div> 
+      </div>
+      <svg class="border-bottom" viewBox="0 0 1440 220">
+          <use xlink:href="#bump-border" />
+      </svg>
+
+      <div class="water">
+          <svg class="key-location-icon" viewBox="0 0 211 138">
+              <use width="211" height="138" xlink:href="#kraken-icon" />
+          </svg>
+          <h3>Blog</h3>
+          <p>My musings, discoveries, and behind the scenes process. Warning: Here Be Monsters.</p>                
+          
+          <div class="button"><a href="blog.html" target="_blank">Read On</a></div>           
+      </div>
+
+      <svg class="border-top" viewBox="0 0 1440 129">
+          <use xlink:href="#wave-border" />
+      </svg>
+      <div>
+        <svg class="key-location-icon" viewbox="0 0 196 196">              
+            <polygon fill="#6AD4EB" fill-rule="evenodd" points="155.942 0 98 57.942 40.058 0 0 40.059 57.942 98 0 155.942 40.058 196 98 138.059 155.942 196 196 155.942 138.059 98 196 40.059"/>                    
+        </svg>
+        <h3>Contact Me</h3>
+        <p>Need a design with personality? Got a monster sized hole in your team? Just want to chat? Drop me a line.</p>
+        <div class="button"><a href="contact.html">Let's Talk</a></div> 
+        
+      </div>
+      <svg class="border-bottom" viewBox="0 0 1440 129">
+          <use xlink:href="#wave-border" />
+      </svg>
+
+    </div>
+
+    <footer>         
+        {% include social.html %}
+
+        <p>All creations and krakens &copy; Kezie Todd 2018</p>          
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/TextPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/animation.min.js"></script> 
+</body>
+
+</html>
