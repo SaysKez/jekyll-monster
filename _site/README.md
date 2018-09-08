@@ -1,6 +1,7 @@
 # Jekyll Monster
 
 ### Still to Be Done:
--	Blog
-- 	Convert case studies to collections so they can be written in markdown
+-  Improve blog index page
+-  Add pages/loading function for portfolio and blog index
+-  Make posts searchable/filterable with tags
 -  Further breakdown SVGs into includes
